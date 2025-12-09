@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/productos.css">
+</head>
+<body>
+  
+<header class="bg-success text-white py-3 mb-4">
+  <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+    <h1 class="mb-0">NutriSalud</h1>
+    <p class="mb-0">Bienvenido, <span id="nombreUsuario"></span></p>
+    <nav class="mt-3 mt-md-0">
+      <button class="btn btn-outline-light me-2" onclick="location.href='pagina.html'">Inicio</button>
+      <button class="btn btn-outline-light me-2" onclick="location.href='productos.html'">Productos</button>
+      <button class="btn btn-outline-light me-2" onclick="location.href='nosotros.html'">Nosotros</button>
+      <button class="btn btn-outline-light me-2" onclick="location.href='contactanos.html'">Contáctanos</button>
+      <button class="btn btn-outline-light me-2" onclick="location.href='carrito.html'">🛒 Carrito</button>
+      <button class="btn btn-danger" id="cerrar_sesion">Cerrar Sesión</button>
+    </nav>
+  </div>
+</header>
+
+  <!-- SPORT -->
+<section class="categoria-section py-4">
+  <div class="container tarjeta shadow-lg p-4 mb-4">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h3 class="text-primary">Categoría Deportiva</h3>
+        <p>
+          Potencia tu rendimiento físico con productos naturales pensados para antes, durante y después del ejercicio. Recuperación, energía y fuerza en cada porción.
+        </p>
+        <a href="sport.html" class="btn btn-outline-primary mt-3">Ver productos</a>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="../img/CategoriaSport.png" class="categoria-icon" alt="Icono deportiva" style="max-width: 250px;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTROL DE PESO -->
+<section class="categoria-section py-4">
+  <div class="container tarjeta shadow-lg p-4 mb-4">
+    <div class="row align-items-center flex-md-row-reverse">
+      <div class="col-md-6">
+        <h3 class="text-primary">Control de Peso</h3>
+        <p>
+          Apoya tu proceso de control de peso con suplementos naturales que ayudan al metabolismo y control del apetito, sin afectar tu bienestar.
+        </p>
+        <a href="controlpeso.html" class="btn btn-outline-primary mt-3">Ver productos</a>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="../img/CategoriaPeso.png" class="categoria-icon" alt="Icono peso" style="max-width: 250px;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INMUNOLÓGICA -->
+<section class="categoria-section py-4">
+  <div class="container tarjeta shadow-lg p-4 mb-4">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h3 class="text-primary">Sistema Inmunológico</h3>
+        <p>
+          Refuerza tus defensas con productos diseñados para protegerte y mantener tu sistema inmunológico fuerte y equilibrado.
+        </p>
+        <a href="inmunologica.html" class="btn btn-outline-primary mt-3">Ver productos</a>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="../img/CategoriaInmunologica.png" class="categoria-icon" alt="Icono inmune" style="max-width: 250px;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIMPIEZA -->
+<section class="categoria-section py-4">
+  <div class="container tarjeta shadow-lg p-4 mb-4">
+    <div class="row align-items-center flex-md-row-reverse">
+      <div class="col-md-6">
+        <h3 class="text-primary">Limpieza y Detox</h3>
+        <p>
+          Elimina toxinas y mejora el funcionamiento de tu organismo con fórmulas naturales depurativas para una salud integral.
+        </p>
+        <a href="limpieza.html" class="btn btn-outline-primary mt-3">Ver productos</a>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="../img/CategoriaLimpieza.png" class="categoria-icon" alt="Icono limpieza" style="max-width: 250px;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANTIAGE -->
+<section class="categoria-section py-4">
+  <div class="container tarjeta shadow-lg p-4 mb-4">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h3 class="text-primary">Antiage</h3>
+        <p>
+          Cuida tu piel y tu vitalidad con productos que combaten el envejecimiento prematuro, promoviendo una apariencia joven y saludable.
+        </p>
+        <a href="antiage.html" class="btn btn-outline-primary mt-3">Ver productos</a>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="../img/CategoriaAntiAge.png" class="categoria-icon" alt="Icono antiage" style="max-width: 250px;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVITALIZA -->
+<section class="categoria-section py-4">
+  <div class="container tarjeta shadow-lg p-4 mb-4">
+    <div class="row align-items-center flex-md-row-reverse">
+      <div class="col-md-6">
+        <h3 class="text-primary">Revitaliza tu cuerpo</h3>
+        <p>
+          Aumenta tu energía, mejora tu estado de ánimo y revitaliza tu organismo con productos elaborados con ingredientes naturales.
+        </p>
+        <a href="revitaliza.html" class="btn btn-outline-primary mt-3">Ver productos</a>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="../img/CategoriaRevitaliza.png" class="categoria-icon" alt="Icono revitaliza" style="max-width: 250px;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NUTRICIÓN -->
+<section class="categoria-section py-4">
+  <div class="container tarjeta shadow-lg p-4 mb-4">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h3 class="text-primary">Nutrición</h3>
+        <p>
+          Completa tu alimentación con suplementos nutricionales que aportan vitaminas, minerales y nutrientes esenciales para mantenerte fuerte y saludable.
+        </p>
+        <a href="nutricion.html" class="btn btn-outline-primary mt-3">Ver productos</a>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="../img/CategoriaNutricion.png" class="categoria-icon" alt="Icono nutrición" style="max-width: 250px;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIGOR MENTAL -->
+<section class="categoria-section py-4">
+  <div class="container tarjeta shadow-lg p-4 mb-4">
+    <div class="row align-items-center flex-md-row-reverse">
+      <div class="col-md-6">
+        <h3 class="text-primary">Vigor Mental</h3>
+        <p>
+          Mejora tu concentración, memoria y claridad mental con productos formulados para el rendimiento cognitivo y el equilibrio emocional.
+        </p>
+        <a href="urgormental.html" class="btn btn-outline-primary mt-3">Ver productos</a>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="../img/CategoriaVigorMental.png" class="categoria-icon" alt="Icono mental" style="max-width: 250px;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-center py-3 bg-success text-white mt-4">
+  &copy; 2025 NutriSalud | Salud y Bienestar Natural
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/productos.js"></script>
+  <script src="../js/usuario.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.min.js"></script>
+  <script>
+  if (!window.__rasaWidgetInitialized) {
+    window.__rasaWidgetInitialized = true;
+    WebChat.default({
+      initPayload: "/saludo",   // El mensaje inicial del bot (puedes cambiarlo si lo deseas)
+      socketUrl: "http://127.0.0.1:5005",  // Asegúrate de que apunte al puerto de tu servidor Rasa
+      socketPath: "/socket.io/",  // Ruta del servidor de SocketIO
+      customData: { language: "es" },   // Opcional: idioma del chat
+      title: "Asistente Virtual",  // Título del chat
+      subtitle: "¿En qué puedo ayudarte?",  // Subtítulo del chat
+      params: { storage: "session" }  // Persistencia de sesión (opcional)
+    }, null);
+  }
+  </script>
+</body>
+</html>

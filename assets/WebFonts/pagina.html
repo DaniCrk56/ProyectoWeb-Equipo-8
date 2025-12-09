@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriSalud - Productos Naturales</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/basico.css">
+  
+</head>
+
+<body class="bg-info-subtle">
+  <!-- HEADER -->
+  <header class="bg-info text-white py-3 mb-4"></header>
+
+  <!-- SECCIÓN 1 -->
+  <section class="seccion">
+    <div
+      class="container tarjeta shadow-lg animate__animated animate__fadeInLeft">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>Bienvenido a NutriSalud</h2>
+          <p>
+            En NutriSalud creemos en el poder de la naturaleza para transformar
+            vidas. Ofrecemos una amplia gama de productos naturales
+            formulados con ingredientes cuidadosamente seleccionados, pensados
+            para ayudarte a alcanzar una vida más saludable y equilibrada. Nos
+            apasiona acompañarte en tu camino hacia el bienestar integral,
+            combinando ciencia y tradición en cada uno de nuestros suplementos.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="../img/Imagen Empresa.jpg"
+            class="img-fluid rounded img-bienvenida"
+            alt="Bienestar Natural">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2 -->
+  <section class="seccion">
+    <div
+      class="container tarjeta shadow-lg animate__animated animate__fadeInRight">
+      <div class="row align-items-center flex-md-row-reverse">
+        <div class="col-md-6">
+          <h2>Atención personalizada</h2>
+          <p>
+            Sabemos que cada persona es única, por eso contamos con un asistente
+            virtual que te brinda orientación personalizada en tiempo real. Nuestro
+            chatbot te ayuda a elegir los productos más adecuados según tus
+            necesidades, objetivos de salud y estilo de vida. Siempre tendrás a
+            tu disposición una atención eficiente, amigable y accesible desde
+            cualquier dispositivo.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="../img/Imagen Chatbot.jpg"
+            class="img-fluid rounded img-chatbot"
+            alt="Chatbot Natural">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 3 -->
+  <section class="seccion">
+    <div
+      class="container tarjeta shadow-lg animate__animated animate__fadeInLeft">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>Compra segura y fácil</h2>
+          <p>
+            Diseñamos nuestra plataforma para que disfrutes una experiencia de
+            compra rápida, sencilla y completamente segura. Desde la selección
+            del producto hasta el pago, todo el proceso está optimizado para tu
+            comodidad. Utilizamos tecnologías confiables y pasarelas de pago
+            protegidas que garantizan la seguridad de tus datos en cada transacción.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="../img/compra-segura.jpg"
+            class="img-fluid rounded img-compra"
+            alt="Compra Segura">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+<footer class="text-center py-3 bg-success text-white mt-4">
+  &copy; 2025 NutriSalud | Salud y Bienestar Natural
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.min.js"></script>
+<script>
+  if (!window.__rasaWidgetInitialized) {
+    window.__rasaWidgetInitialized = true;
+    WebChat.default({
+      initPayload: "/saludo",
+      socketUrl: "http://127.0.0.1:5005",
+      socketPath: "/socket.io/",
+      title: "Asistente Virtual",
+      subtitle: "¿En qué puedo ayudarte?",
+      // metadata si la quieres (requiere metadata_key: customData en credentials.yml)
+      customData: { language: "es", cedula: (JSON.parse(localStorage.getItem("usuario"))||{}).cedula },
+      params: { storage: "session" }
+    }, null);
+  }
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/menu.js"></script>
+  <!-- 1) Lógica de usuario -->
+  <script src="../js/usuario.js"></script>
+  <!-- 2) Navegación -->
+  <script src="../js/index.js"></script>
+</body>
+
+</html>
